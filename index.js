@@ -4,14 +4,14 @@ const hbs=require('hbs');
 
 const app=express();
 
-const port=8000;
+const port=process.env.port || 8000;
 const templates=path.join(__dirname,'/templates');
 const viewsPath=path.join(templates,'/views');
 const partialsPath=path.join(templates,'/partials');
 const staticLocation=path.join(templates,'../public');
 //console.log(staticLocation);
 
-hbs.registerPartials(partialsPath);
+hbs.registerPartials(partialsPath); 
 
 app.use(express.static(staticLocation));
 
