@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>insideHeader}}
+</head>
+<body>
+    
+    {{>navbar}}
+    <div class='container-fluid menu'>
+        <div class='row'>
+            <div class='col-md-10 col-12 mx-auto'>
+                
+                <div class='row'>
+                    <div class='col-md-6 col-sm-12 home_left'>
+                        <p>Welcome to weather app</p>
+                        <h1>Check your city's <span class='weather_text'>weather</span> here</h1>
+                        <a href='/weather'><button class='check_now'>Check now</button></a>
+                    </div>
+                    <div class='col-md-6 col-12 home_right'>
+                        {{> carousel}}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

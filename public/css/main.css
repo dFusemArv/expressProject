@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --back: #001a33;
+}
+
+html{
+    font-size: 90%;
+}
+
+body{
+    font-family: 'Dancing Script', cursive;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    margin:0;
+}
+
+/* .menu{
+    background: var(--back);
+} */
+
+.the_footer{
+    width:100%;
+    color: white;
+    line-height: 2.5rem;
+    background-color: var(--back);
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+.navbar{
+    width: 100%;
+    background-color: var(--back);
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar-toggler{
+    background-color: #003566;
+}
+
+.navbar ul li{
+    margin-left: 1.5rem;
+    padding-right: 2px;
+}
+
+
+
+.fa-snowflake{
+    transition: all linear;
+    animation:  rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.carousel-inner img{
+    height:300px;
+    width: 300px;
+}
+
+.home_left{
+    height:40rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home_right{
+    height:40rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.home_left p {
+    font-size: 2rem;
+
+}
+
+.home_left h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin-bottom: 75px;
+}
+
+.weather_text{
+    color: #0398fc;
+}
+
+.menu button{
+    border: none;
+    font-size: 1.3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.8rem;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: 0 8px 6px -6px;
+    
+}
+
+.menu button:hover{
+    background-color:  #0398fc;
+    color: white;
+    box-shadow: 0 8px 6px -6px #4266f5;
+}
+
+
+
+
+
+.temperature_information{
+    width: 40rem;
+    background-color: var(--back);
+    color: white;
+    margin:20px auto auto auto;
+    border-radius: 5px;
+    padding: 2px;
+    min-height: 20rem;
+}
+
+.top_layer{
+    width:100%;
+    height:3rem;
+    background-color:#00041a;
+    display: flex;
+    justify-content: space-around;
+    border-radius:10px;
+}
+
+.top_layer p {
+    margin: auto;
+    font-weight: 550;
+}
+
+
+.main_layer{
+    padding:10px;
+}
+
+.main_layer #city_name{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mid_layer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mid_layer p{
+    font-size: 7rem;
+    font-weight: 600;
+}
+.about_image{
+    height:500px;
+    width: auto;
+}
+
+
+.data_hide{
+    visibility: hidden;
+}
+
+
+
+.the_form{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    background-color: var(--back);
+    position: relative;
+    min-height: 40px;
+}
+
+.the_form #city_name{
+    width:100%;
+    padding: 12px;
+    border:none;
+    outline:none;
+    border-radius: 2px;
+    font-size: 150%;
+}
+
+.the_form input[type='submit']{
+    position:absolute;
+    right:16px;
+    top: 16px;
+    color:white;
+    background-color: #0398fc;
+    box-shadow: 0 8px 6px -6px #4266f5;
+    border: none;
+    outline: none;
+    padding:5px;
+    border-radius: 5px;
+
+}
+
+
+.the_form input[type='submit']:hover{
+    color:#0398fc;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px white;
+}
+
+@media(max-width: 768px){
+    .home_left{
+        height:auto;
+        margin: 20px;
+    }
+    .home_right{
+        height:auto;
+        margin: 20px;
+    }
+    .home_left h1 {
+      
+        margin-bottom: 20px;
+    }
+}
+
